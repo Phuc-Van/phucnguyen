@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>buoi16</title>
+<link href="index.css" rel="stylesheet" type="text/css">
+	<script>
+    // Function to show the tooltip
+    function showTooltip(event, message) {
+        var tooltip = document.getElementById('tooltip');
+        tooltip.style.display = 'block';
+        tooltip.style.left = event.pageX + 'px'; // Position tooltip based on mouse position
+        tooltip.style.top = event.pageY + 'px';
+        tooltip.innerHTML = message; // Set the tooltip message
+    }
+
+    // Function to hide the tooltip
+    function hideTooltip() {
+        var tooltip = document.getElementById('tooltip');
+        tooltip.style.display = 'none'; // Hide tooltip when mouse leaves
+    }
+		</script>
+</head>
+
+<body>
+<div id="trai"><img src="bai 2.2 - Tem/IMAGES/tem.jpg" width="387" height="432" alt=""/>
+	<img class="socngang" src="bai 2.2 - Tem/IMAGES/socngang.gif" width="20" height="226" alt=""/>
+	<img class="socdoc" src="bai 2.2 - Tem/IMAGES/mmau1.gif" width="20" height="218" alt=""/>
+	</div>
+	
+<div class="anhTem">
+	<img src="bai 2.2 - Tem/IMAGES/tem1a.jpg" width="70" height="90" alt=""
+		onmouseover="showTooltip(event,'Tem này đang bán' )"
+onmouseout="hideTooltip()" /><img src="bai 2.2 - Tem/IMAGES/tem1b.jpg" width="70" height="90" alt=""
+								  onmouseover="showTooltip(event, 'Tem này đang bán')"
+onmouseout="hideTooltip()"/><img src="bai 2.2 - Tem/IMAGES/tem1d.jpg" width="70" height="90" alt=""
+								 onmouseover="showTooltip(event, 'Tem này đang bán')"
+onmouseout="hideTooltip()"/><img src="bai 2.2 - Tem/IMAGES/tem1e.jpg" width="70" height="90" alt=""
+								 onmouseover="showTooltip(event, 'Tem này đang bán')"
+onmouseout="hideTooltip()"/></div>
+	<div class="anhTem1"><img src="bai 2.2 - Tem/IMAGES/tem1f.gif" width="114" height="114" alt=""
+							  onmouseover="showTooltip(event, 'Tem này đang bán')"
+onmouseout="hideTooltip()"/></div>
+	<div id="tooltip" style="display: none; position: absolute; background-color: rgba(255, 255, 255, 0.8); border: 1px solid #000; padding: 5px; border-radius: 4px; z-index: 1000;"></div>
+
+
+	<div id="ngay2">
+		<marquee id="down" direction="down" behavior="scroll" scrollamount="5"><img src="bai 2.2 - Tem/IMAGES/ngay2.gif" width="127" height="106" alt=""/></marquee></div>
+
+<div class="Text">
+<a href="javascript:void(0);" class="button">TRANG CHỦ |</a>
+<a href="javascript:void(0);" class="button">SƯU TẬP |</a>
+<a href="javascript:void(0);" class="button">CLB </a>
+
+	</div>
+<div id="phai"><img src="bai 2.2 - Tem/IMAGES/lich_su.jpg" width="256" height="65" alt=""/>
+  <p id="noidung">Năm 1838, Ông Rowland Hill,<br> giám đốc Bưu điện Anh quốc đã đệ trình<br>Quốc hội Anh để án phát hành tem <br>dán lên phong bì để giải quyết vấn đề thu <br>cước phí. Đầu năm 1840,<br> đề án này được thông qua và ngày 6/5/1840, <br>con tem đầu tiên in hình nữ hòang <br>Victoria, gía “1 penny”ra đời.</p>
+	<img src="bai 2.2 - Tem/IMAGES/condau1.gif" width="191" height="196" alt=""/><div id="righttextbottom"> NHÓM<span>.</span>MULTIMEDIA<span>.</span>SƯU<span>.</span>TẬP</div>
+	</div>
+
+</body>
+</html>
